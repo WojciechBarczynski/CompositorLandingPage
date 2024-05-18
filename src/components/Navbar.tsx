@@ -17,6 +17,7 @@ import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 import { LogoIcon } from "./Icons";
+import { FaBook } from "react-icons/fa6";
 
 interface RouteProps {
   href: string;
@@ -25,20 +26,12 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
+    href: "#vision",
+    label: "Vision",
+  },
+  {
     href: "#features",
     label: "Features",
-  },
-  {
-    href: "#testimonials",
-    label: "Testimonials",
-  },
-  {
-    href: "#pricing",
-    label: "Pricing",
-  },
-  {
-    href: "#faq",
-    label: "FAQ",
   },
 ];
 
@@ -55,7 +48,7 @@ export const Navbar = () => {
               className="ml-2 font-bold text-xl flex"
             >
               <LogoIcon />
-              ShadcnUI/React
+              LiveCompositor
             </a>
           </NavigationMenuItem>
 
@@ -96,14 +89,25 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+                    href="https://compositor.live/"
+                    target="_blank"
+                    className={`w-[110px] border ${buttonVariants({
+                      variant: "secondary",
+                    })}`}
+                  >
+                    <FaBook className="mr-2 w-5 h-5" />
+                    Docs
+                  </a>
+                  <a
+                    rel="noreferrer noopener"
+                    href="https://github.com/membraneframework/live_compositor"
                     target="_blank"
                     className={`w-[110px] border ${buttonVariants({
                       variant: "secondary",
                     })}`}
                   >
                     <GitHubLogoIcon className="mr-2 w-5 h-5" />
-                    Github
+                    GitHub
                   </a>
                 </nav>
               </SheetContent>
@@ -129,12 +133,21 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+              href="https://github.com/membraneframework/live_compositor"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
-              <GitHubLogoIcon className="mr-2 w-5 h-5" />
-              Github
+              Docs
+              <FaBook className="ml-2 w-5 h-5" />
+            </a>
+            <a
+              rel="noreferrer noopener"
+              href="https://github.com/membraneframework/live_compositor"
+              target="_blank"
+              className={`border ${buttonVariants({ variant: "secondary" })}`}
+            >
+              GitHub
+              <GitHubLogoIcon className="ml-2 w-5 h-5" />
             </a>
 
             <ModeToggle />
