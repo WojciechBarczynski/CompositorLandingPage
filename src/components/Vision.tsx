@@ -41,10 +41,10 @@ export const Vision = () => {
         </span>
       </h2>
       <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
-        Simple, powerful, fast. Pick three.
+        Make mixing live streams as building a website.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:flew-wrap lg:grid-cols-3 gap-8">
         {features.map(({ icon, title, description }: FeatureProps) => (
             <Card
               key={title}

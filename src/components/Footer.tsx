@@ -9,109 +9,32 @@ export const Footer = () => {
         <div className="col-span-full xl:col-span-2">
           <a
             rel="noreferrer noopener"
-            href="/"
+            href="#"
             className="font-bold text-xl flex"
           >
             <LogoIcon />
-            LiveCompositor
           </a>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow US</h3>
+          <h3 className="font-bold text-lg">LiveCompositor</h3>
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://github.com/membraneframework/live_compositor"
               className="opacity-60 hover:opacity-100"
             >
-              Github
+              GitHub
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://compositor.live/docs/intro"
               className="opacity-60 hover:opacity-100"
             >
-              Twitter
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Dribbble
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Platforms</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Web
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Mobile
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Desktop
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">About</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Features
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Pricing
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              FAQ
+              Docs
             </a>
           </div>
         </div>
@@ -121,17 +44,7 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Youtube
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
+              href="https://discord.gg/J9B3S5c2"
               className="opacity-60 hover:opacity-100"
             >
               Discord
@@ -141,27 +54,36 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://x.com/ElixirMembrane"
               className="opacity-60 hover:opacity-100"
             >
-              Twitch
+              Twitter/X
             </a>
           </div>
         </div>
-      </section>
 
-      <section className="container pb-14 text-center">
-        <h3>
-          &copy; 2024 Landing page made by{" "}
-          <a
-            rel="noreferrer noopener"
-            target="_blank"
-            href="https://github.com/leoMirandaa"
-            className="text-primary transition-all border-primary hover:border-b-2"
-          >
-            Leo Miranda
-          </a>
-        </h3>
+        <div className="flex flex-col gap-2">
+          <h3 className="font-bold text-lg">Company</h3>
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="https://swmansion.com/rtc-video-streaming"
+              className="opacity-60 hover:opacity-100"
+            >
+              Website
+            </a>
+          </div>
+
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="https://membrane.stream/contact"
+              className="opacity-60 hover:opacity-100"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
       </section>
     </footer>
   );

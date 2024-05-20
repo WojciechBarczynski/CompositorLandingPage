@@ -33,6 +33,14 @@ const routeList: RouteProps[] = [
     href: "#features",
     label: "Features",
   },
+  {
+    href: "#how-it-works",
+    label: "How it works?",
+  },
+  {
+    href: "#contact",
+    label: "Contact",
+  },
 ];
 
 export const Navbar = () => {
@@ -44,11 +52,10 @@ export const Navbar = () => {
           <NavigationMenuItem className="font-bold flex">
             <a
               rel="noreferrer noopener"
-              href="/"
+              href="#"
               className="ml-2 font-bold text-xl flex"
             >
               <LogoIcon />
-              LiveCompositor
             </a>
           </NavigationMenuItem>
 
@@ -72,7 +79,7 @@ export const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Shadcn/React
+                    LiveCompositor
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
@@ -89,7 +96,7 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel="noreferrer noopener"
-                    href="https://compositor.live/"
+                    href="https://compositor.live/docs/intro"
                     target="_blank"
                     className={`w-[110px] border ${buttonVariants({
                       variant: "secondary",
@@ -133,7 +140,7 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/membraneframework/live_compositor"
+              href="https://compositor.live/docs/intro"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
